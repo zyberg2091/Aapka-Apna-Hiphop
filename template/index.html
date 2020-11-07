@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Rap Generator">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rap Generator</title>
 </head>
+
 <body>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"> </script>
+    <script src="./eminem.json"></script>
+    <script>
+        function test(callback) {
+            $.getJSON("./eminem.json", function (data) {
+                callback(data);
+            });
+        }
+        test(function (data) {
+            keys = []
+            for(var k in data) keys.push(k)
+            values = []
+            for(var k in data) values.push(data[k])
+
+            var result = {}
+            values.forEach((key, i) => result[key] = keys[i]);
+
+            function getTokenisedWord(seedWord) {
+                let token = data[seedWord]
+                return token
+            }
+            var model = undefined
+            async function loadModel(tokenList) {
+                model = await tf.loadLayersModel("../Eminem_models/model.json");
+                // model.predict(tf.tensor(tokenList)).array().then(predictions =>{
+                //     console.log(predictions);
+                // })
+                model.predict(tf.tensor([tokenList])).then(predictions => {
+                    console.log(predictions)
+                });
+            }
+
+            function make_prediction() {
+                input = "too late side".split(" ")
+                const tokenList = []
+                input.forEach(element => {
+                    const seedWordToken = getTokenisedWord(element);
+                    tokenList.push(seedWordToken)
+                });
+                for (var i = 1; i <= 10; i++) {
+                    tokenList.push(0);
+                }
+                loadModel(tokenList)
+
+                // tf.pad(
+                //     tensor, paddings, mode = 'CONSTANT', constant_values = 0, name = None
+                // )
+                // const array = tf.tensor[tokenList]
+                // model.predict(array).data().then(predictions => {
+                //     const resultIdx = tf.argMax(predictions).dataSync()[0];
+                //     console.log('Predicted Word ::', result[resultIdx]);
+                // })
+            }
+            make_prediction();
+        });
+    </script>
+    <script>
+    </script>
 </body>
+
 </html>

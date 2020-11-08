@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godly Bars</title>
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/styles/eminem.css">
+</head>
+
+<body id="eminem">
+    <div class="container">
+        <div class="header">
+            <div class="info">
+                <h1>Godly Bars | Eminem</h1>
+                A modern day webapp that generates lyrics specific to Rapper's style. Don't believe it? Here's what we
+                did to achieve this - <br>
+                We have made a word based LSTM text prediction model with very limited data of 70 songs of EMINEM &
+                Drake. <br>
+                <b>Work to be done - </b> we are currently collecting data to train our model in a better way to bring
+                much better raps in the near future.
+                We aim to support more artists in the future.
+            </div>
+
+            <div class="videoBox">
+                <iframe width="354" height="200" src="https://www.youtube.com/embed/ay6fqswWlMU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3>Demo Video for Usage</h3>
+            </div>
+        </div>
+
+        <div class="description">
+            <p class="about-text"><strong>EMINƎM</strong>, is an American rapper, songwriter, and record producer.
+                Credited
+                with popularizing hip hop in Middle
+                America, Eminem's global success and acclaimed works are widely regarded as having broken racial
+                barriers
+                for the acceptance of white rappers in popular music genre.</p>
+            <div class="text-instruction">
+                <h2>Instructions</h2>
+                <ul>
+                    <li>
+                        Hey there, these are a bunch of steps you must perform to make this work.
+                    </li>
+                    <li>
+                        Type in the starting letters of your next rap.
+                    </li>
+                    <li>
+                        Make sure, you enter only 3-4 words.
+                    </li>
+                    <li>
+                        Go through our video tutorial to clear things.
+                    </li>
+                    <li>
+                        Do the required steps and wait for the magic to happen.
+                    </li>
+                </ul>
+            </div>
+            <div class="video-con">
+                <iframe width="300" height="168" src="https://www.youtube.com/embed/ay6fqswWlMU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3>Demo Video for Usage</h3>
+            </div>
+
+        </div>
+        <div class="prediction">
+            <div class="suggestion">
+                <h3>Suggested phrases <br> for best results.</h3>
+                <ul>
+                    <li>
+                        It's horrible
+                    </li>
+                    <li>
+                        Twenty five life
+                    </li>
+                    <li>
+                        Fuck hip-hop
+                    </li>
+                    <li>
+                        So corner ya
+                    </li>
+                    <li>
+                        Imprisoned selfish bitch
+                    </li>
+                </ul>
+            </div>
+            <div class="inputArea" style="text-align: center;">
+                <input class="inputField" type="text" id="text-input" placeholder="Enter between 3 to 6 words."><br>
+                <button class="predictBtn" type="submit" id="submit-button">Submit Text</button>
+            </div>
+            <p class="output-text" id="output-text">
+                <strong>Bars will be generated here:</strong><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur error officia quasi,
+                totam ipsam mollitia ullam, esse natus vero vel voluptatibus et laboriosam culpa debitis, quibusdam
+                optio
+                tempore expedita doloremque.
+            </p>
+            <select id='voiceList' style="display: none;"></select>
+        </div>
+    </div>
+    <div class="more">
+        <a href="{{ url_for('kanye') }}"
+            style="-webkit-tap-highlight-color: transparent; text-decoration: none !important; outline: none !important;">
+            <div id="eminem" style="text-align: center;">
+                <img src="/static/images/kanye.jpg" style="height: 20vh; width: 20vh;">
+                <h5>Want to try Kanye?</h5>
+            </div>
+        </a>
+        <a href="{{ url_for('drake') }}"
+            style="-webkit-tap-highlight-color: transparent; text-decoration: none !important; outline: none !important;">
+            <div id="eminem" style="text-align: center;">
+                <img src="/static/images/drake.jpg" style="height: 20vh; width: 20vh;">
+                <h5>Want to try Drake?</h5>
+            </div>
+        </a>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../static/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    color: #f7f7f7;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url('/static/images/cover4.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header .info {
+    width: 35%;
+    bottom: 50px;
+    left: 15px;
+    position: absolute;
+    color: #f7f7f7;
+    text-shadow: 1px 1px #181818;
+}
+
+.videoBox {
+    position: absolute;
+    bottom: 70px;
+    right: 15px;
+    color: #f7f7f7;
+    text-align: center;
+    cursor: pointer;
+}
+
+.video-con {
+    display: none;
+    text-align: center;
+    margin: auto;
+}
+
+.prediction {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 50px 0px;
+}
+
+.inputArea {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+}
+
+.inputField {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 1em;
+    color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+}
+
+input::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+.predictBtn {
+    width: 150px;
+    margin: 2%;
+    height: 40px;
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+    text-shadow: 1px 1px #181818;
+    font-weight: 800;
+    font-size: 1.2em;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.output-text {
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+    width: 40%;
+}
+
+.description {
+    min-height: 100vh;
+    padding: 10px;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+}
+
+.text-instruction {
+    position: absolute;
+    left: 2%;
+    bottom: 20%;
+    width: 300px;
+}
+
+ul {
+    text-align: justify !important;
+    margin-bottom: 50px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul>li::before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    background-image: url('/static/images/icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+}
+
+.about-text {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+    width: 300px;
+    text-align: right;
+}
+
+.suggestion{
+    position: absolute;
+    left: 2%;
+    top: 10%;
+}
+
+.container{
+    min-height: 100%;
+    margin-bottom: -40px;
+    padding-bottom: 40px;
+}
+
+.footer{
+    height: 10vh;
+    text-align: center;
+    padding: 15px;
+}
+
+.more{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.more a{
+    margin: 0px 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .inputField {
+        width: 70vw;
+    }
+
+    .header .info {
+        width: 50vw;
+    }
+
+    .description {
+        position: static;
+    }
+
+    .prediction,
+    .output-text,
+    .inputArea,
+    .text-instruction {
+        position: static;
+    }
+
+    .about-text {
+        position: static;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .suggestion{
+        position: static;
+        padding-left: 3%;
+    }
+
+    .prediction {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        min-height: 150vh;
+    }
+
+    .inputArea {
+        height: fit-content;
+    }
+
+    .output-text {
+        width: 300px;
+        margin-top: 15px;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    center {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .videoBox {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+.filter {
+    position: absolute;
+    visibility: hidden;
+}
+
+.dots {
+    filter: url(#gooeyness);
+    padding: 15px;
+}
+
+.dot {
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.dot:first-child {
+    animation: FirstDot 3s infinite;
+}
+
+.dot:nth-child(2) {
+    animation: SecondDot 3s infinite;
+}
+
+.dot:nth-child(3) {
+    animation: ThirdDot 3s infinite;
+}
+
+.dot:nth-child(4) {
+    animation: FourthDot 3s infinite;
+}
+
+.dot:nth-child(5) {
+    animation: FifthDot 3s infinite;
+}
+
+@keyframes FirstDot {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+
+    25% {
+        transform: scale(2.5) translateX(0);
+    }
+
+    50% {
+        transform: scale(1) translateX(0);
+    }
+
+    83% {
+        transform: scale(1) translateX(240px);
+    }
+
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes SecondDot {
+    0% {
+        transform: translateX(0px);
+    }
+
+    27% {
+        transform: translateX(-40px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    81% {
+        transform: translateX(180px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes ThirdDot {
+    0% {
+        transform: translateX(0px);
+    }
+
+    29% {
+        transform: translateX(-100px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    79% {
+        transform: translateX(120px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes FourthDot {
+    0% {
+        transform: translateX(0px);
+    }
+
+    31% {
+        transform: translateX(-160px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    77% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes FifthDot {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+
+    33% {
+        transform: scale(1) translateX(-220px);
+    }
+
+    50% {
+        transform: scale(1) translateX(0);
+    }
+
+    75% {
+        transform: scale(2.5) translateX(0);
+    }
+
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}

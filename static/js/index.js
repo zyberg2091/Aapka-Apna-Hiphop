@@ -9,7 +9,7 @@ document.querySelector("#submit-button").addEventListener('click', function () {
         initialWords: text,
         artist: document.getElementsByTagName("body")[0].id
     }
-    $.post("http://127.0.0.1:5000/predict", JSON.stringify(message), function (response){
+    $.post("https://aapka-apna-hip-hop.herokuapp.com/predict", JSON.stringify(message), function (response){
         speakLyrics(response)
         var res = response.split(" ")
         document.getElementById("output-text").innerHTML = "<strong>The generated bars are :</strong> <br>"

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Rap Generator">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rap Generator</title>
+    <title>Aapka Apna HipHop</title>
 </head>
 
 
@@ -114,6 +114,7 @@
 
 <body>
     <div class="preloader">
+        <h1>Aapka apna Hip Hop</h1>
         <h4 style="color: aliceblue; margin: 20px;"> Whoose raps would you like to generate? </h4>
         <div class="row" style="outline: none;">
             <a href="{{ url_for('eminem') }}" style="outline: none !important; text-decoration: none !important;">
@@ -144,7 +145,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"> </script>
-    <!-- <script>
+    <script>
             function test(callback) {
                 $.getJSON("./eminem.json", function (data) {
                     callback(data);
@@ -155,10 +156,8 @@
                 for (var k in data) keys.push(k)
                 values = []
                 for (var k in data) values.push(data[k])
-
                 var result = {}
                 values.forEach((key, i) => result[key] = keys[i]);
-
                 function getTokenisedWord(seedWord) {
                     let token = data[seedWord]
                     return token
@@ -166,14 +165,10 @@
                 var model = undefined
                 async function loadModel(tokenList) {
                     model = await tf.loadLayersModel("../Eminem_models/model.json");
-                    // model.predict(tf.tensor(tokenList)).array().then(predictions =>{
-                    //     console.log(predictions);
-                    // })
                     model.predict(tf.tensor([tokenList])).then(predictions => {
                         console.log(predictions)
                     });
                 }
-
                 function make_prediction() {
                     input = "too late side".split(" ")
                     const tokenList = []
@@ -185,21 +180,12 @@
                         tokenList.push(0);
                     }
                     loadModel(tokenList)
-
-                    // tf.pad(
-                    //     tensor, paddings, mode = 'CONSTANT', constant_values = 0, name = None
-                    // )
-                    // const array = tf.tensor[tokenList]
-                    // model.predict(array).data().then(predictions => {
-                    //     const resultIdx = tf.argMax(predictions).dataSync()[0];
-                    //     console.log('Predicted Word ::', result[resultIdx]);
-                    // })
                 }
                 make_prediction();
             });
         </script>
         <script>
-        </script> -->
+        </script>
 </body>
 
 </html>

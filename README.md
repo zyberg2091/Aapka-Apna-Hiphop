@@ -8,9 +8,20 @@ The project comes with a video tutorial which can view [here](https://youtube.co
 
 The project is deployed for live demo [here](https://aapka-apna-hip-hop.herokuapp.com/).
 
-<img src="https://img.shields.io/badge/Deployed on Heroku-%ffa400.svg?&style=for-the-badge&logo=Heroku&logoColor=white" />
+## Stack Used
+<img src="https://img.shields.io/badge/HTML5-%231DA1F2.svg?&style=for-the-badge&logo=HTML5&logoColor=white&color=E34F26">
+<img src="https://img.shields.io/badge/CSS3-%231DA1F2.svg?&style=for-the-badge&logo=CSS3&logoColor=white&color=1572B6">
+<img src="https://img.shields.io/badge/JavaScript-%231DA1F2.svg?&style=for-the-badge&logo=JavaScript&logoColor=black&color=F7DF1E">
+<img src="https://img.shields.io/badge/jQuery-%231DA1F2.svg?&style=for-the-badge&logo=jQuery&logoColor=white&color=9F55FF">
+<img src="https://img.shields.io/badge/Python-%231DA1F2.svg?&style=for-the-badge&logo=Python&logoColor=white&color=14B9FF">
+<img src="https://img.shields.io/badge/Flask-%231DA1F2.svg?&style=for-the-badge&logo=Flask&logoColor=white&color=107C10">
+<img src="https://img.shields.io/badge/TensorflowJS-%F2740B.svg?&style=for-the-badge&logo=Tensorflow&logoColor=white&color=FF6F00">
+<img src="https://img.shields.io/badge/Deployed on Heroku-%ffa400.svg?&style=for-the-badge&logo=Heroku&logoColor=white&color=430098">
+<img src="http://hits.dwyl.com/zyberg2091/Aapka-Apna-Hiphop 1 2 0.svg" style="height: 27.4px">
 
-## Screenshots
+## This project won the 3rd prize at [HackCBS 3.0](https://hackcbs-3.devfolio.co/submissions) an International hackathon which is India's largest student run hackathon. 
+
+### Screenshots
 
 #### Landing Page
 <img src="/static/Screenshots/Homepage.png">

@@ -13,6 +13,9 @@ The project is deployed for live demo [here](https://aapka-apna-hip-hop.herokuap
     div img{
         margin: 5px;
     }
+    style{
+        display: hidden;
+    }
 </style>
 <div style="display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/HTML5-%231DA1F2.svg?&style=for-the-badge&logo=HTML5&logoColor=white&color=E34F26">

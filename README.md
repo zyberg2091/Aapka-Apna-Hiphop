@@ -18,7 +18,7 @@ The project is deployed for live demo [here](https://aapka-apna-hip-hop.herokuap
 <img src="https://img.shields.io/badge/Flask-%231DA1F2.svg?&style=for-the-badge&logo=Flask&logoColor=white&color=107C10">
 <img src="https://img.shields.io/badge/TensorflowJS-%F2740B.svg?&style=for-the-badge&logo=Tensorflow&logoColor=white&color=FF6F00">
 <img src="https://img.shields.io/badge/Deployed on Heroku-%ffa400.svg?&style=for-the-badge&logo=Heroku&logoColor=white&color=430098">
-<img src="http://hits.dwyl.com/zyberg2091/Aapka-Apna-Hiphop 1 2 0.svg" style="height: 27.4px">
+<img src="http://hits.dwyl.com/zyberg2091/Aapka-Apna-Hiphop 1 2 0.svg" style="height: 40px">
 </div>
 
 ## This project won the 3rd prize at [HackCBS 3.0](https://hackcbs-3.devfolio.co/submissions) an International hackathon which is India's largest student run hackathon. 

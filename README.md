@@ -9,15 +9,7 @@ The project comes with a video tutorial which can view [here](https://youtube.co
 The project is deployed for live demo [here](https://aapka-apna-hip-hop.herokuapp.com/).
 
 ## Stack Used
-<style>
-    div img{
-        margin: 5px;
-    }
-    style{
-        display: hidden;
-    }
-</style>
-<div style="display: flex; flex-wrap: wrap;">
+<div style="display: inline;">
 <img src="https://img.shields.io/badge/HTML5-%231DA1F2.svg?&style=for-the-badge&logo=HTML5&logoColor=white&color=E34F26">
 <img src="https://img.shields.io/badge/CSS3-%231DA1F2.svg?&style=for-the-badge&logo=CSS3&logoColor=white&color=1572B6">
 <img src="https://img.shields.io/badge/JavaScript-%231DA1F2.svg?&style=for-the-badge&logo=JavaScript&logoColor=black&color=F7DF1E">

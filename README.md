@@ -20,7 +20,7 @@ The project is deployed for live demo [here](https://aapka-apna-hip-hop.herokuap
 <img src="https://img.shields.io/badge/Deployed on Heroku-%ffa400.svg?&style=for-the-badge&logo=Heroku&logoColor=white&color=430098">
 </div>
 
-## This project won the 3rd prize at [HackCBS 3.0](https://hackcbs-3.devfolio.co/submissions) an International hackathon which is India's largest student run hackathon. 
+## This project won the 3rd prize at [HackCBS 3.0](https://www.hackcbs.tech/) an International hackathon which is India's largest student run hackathon. 
 
 ### Screenshots
 

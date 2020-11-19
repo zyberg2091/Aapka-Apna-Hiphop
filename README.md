@@ -4,7 +4,7 @@ The next generation Rap tool which uses an ML based approach to generate lyrics 
 
 We have made this project using lyrics of songs of the artists mentioned above. We've used a Tensorflow model that uses LSTM to generate the lyrics word by word, which you can view in Train ipynb files directory. The model is exported to TFJS using the tensorflowjs convertor in python. 
 
-The project comes with a video tutorial which can view [here](https://youtube.com).
+The project comes with a video tutorial which can view [here](https://youtu.be/djFvJSjIn3w).
 
 The project is deployed for live demo [here](https://aapka-apna-hip-hop.herokuapp.com/).
 
